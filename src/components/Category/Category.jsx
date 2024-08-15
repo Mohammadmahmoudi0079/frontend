@@ -6,7 +6,7 @@ import image4 from '../../assets/Category/gaming.png'
 import image5 from '../../assets/Category/vr.png'
 import image6 from '../../assets/Category/speaker.png'
 
-import CategoryCard from '../Shared/CategoryCard'
+import CategoryCard from './CategoryCard'
 
 function Category() {
   return (
@@ -39,7 +39,7 @@ function Category() {
         <div className='container'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           {/* Column 1 */}
-          <CategoryCard  image={image4} imageLoc={"right-2 w-[200px]"} colSpan={"col-span-2"} 
+          <CategoryCard  image={image4} imageLoc={"right-2 bottom-0 "} colSpan={"col-span-2"} 
                         bgFrom={"from-gray-300"} bgTo={"to-white"} txt={"Gaming"} 
                         txt1Color={"text-gray-400"} txt3Color={"text-gray-400"}
                          txtOpacity={"opacity-60"} bgButton={"bg-red-500"}/>

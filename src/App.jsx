@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Category from './components/Category/Category'
+import React from 'react'
+import Home from './Pages/Home'
+import About from './Pages/About';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <dev>
-      <Navbar/>
-      <Hero/>
-      <Category/>
-    </dev>  )
+    <div>
+      <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden'>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      </div>
+    </div>
+      )
 }
 
 export default App
